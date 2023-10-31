@@ -1,0 +1,19 @@
+.forminput{
+    display: flex;
+    flex-direction: column;
+    place-items: center;
+}
+
+.inputbox{
+    width:30%;
+    height: 4vh;
+}
+
+.submitdiv{
+    display: flex;
+    justify-content: center;
+}
+
+#heading_text{
+    text-align: center;
+}
