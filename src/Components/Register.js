@@ -76,7 +76,7 @@ function Register() {
         <br></br>
       </div>
       <div className="submitdiv" onClick={handleSubmit}>
-        <button>Submit</button>
+        <button id="submitbutton">Submit</button>
       </div>
     </div>
   );

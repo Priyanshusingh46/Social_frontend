@@ -3,3 +3,11 @@
     flex-direction: column;
     place-items: center;
 }
+#submitbutton{
+    font-size: 18px;
+}
+.inputbox{
+    width:30%;
+    height: 4vh;
+    font-size: 18px;
+}

@@ -7,11 +7,15 @@
 .inputbox{
     width:30%;
     height: 4vh;
+    font-size: 18px;
 }
 
 .submitdiv{
     display: flex;
     justify-content: center;
+}
+#submitbutton{
+    font-size: 18px;
 }
 
 #heading_text{
