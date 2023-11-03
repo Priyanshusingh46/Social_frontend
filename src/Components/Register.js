@@ -43,7 +43,9 @@ function Register() {
   }
 
   return (
-    <div>
+    <div className="Register-main-cointainer">
+    <div className="Formdiv">
+      <div className="inputContainer">
       <h1 id="heading_text">Please Register here !!!</h1>
       <div className="forminput">
         <input
@@ -76,9 +78,19 @@ function Register() {
         <br></br>
       </div>
       <div className="submitdiv" onClick={handleSubmit}>
-        <button id="submitbutton">Submit</button>
+        <div className="submitcontainer">
+        <h4 id="submit-text"> Submit</h4>
+        </div>
       </div>
+
+      <div className="login-route">
+          <h4 id="login-route-text">Already Registered?  <a href="./login">Login</a> </h4>
+        </div>
+
+
     </div>
+    </div>
+  </div>
   );
 }
 

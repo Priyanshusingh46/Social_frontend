@@ -24,26 +24,41 @@ function Login() {
         }
     }
     return(
-        <div>
-      <h1 id="heading_text">Please Login here !!!</h1>
-      <div className="forminput">
-        <input
-          className="inputbox"
-          type="text"
-          placeholder="Enter your Roll no."
-          onChange={(e) => setRoll(e.target.value)}
-        />
-        <br></br>
-        <input
-          className="inputbox"
-          type="password"
-          placeholder="Enter your Password"
-          onChange={(e) => setPassword(e.target.value)}
-        />
-        <br></br>
+      <div className="Register-main-cointainer">
+      <div className="Formdiv">
+        <div className="inputContainer">
+        <h1 id="heading_text">Please Login here !!!</h1>
+        <div className="forminput">
+          <input
+            className="inputbox"
+            type="text"
+            placeholder="Enter your Roll no."
+            onChange={(e) => setRoll(e.target.value)}
+          />
+          <br></br>
+          <input
+            className="inputbox"
+            type="password"
+            placeholder="Enter your Password"
+            onChange={(e) => setPassword(e.target.value)}
+          />
+          <br></br>
+          <div className="forgetpassworddiv">
+          <h4 id="forgetpasswordtext"> Forget password? </h4>
+          </div>
+          <br></br>
+        </div>
+        <div className="submitdiv" onClick={handleSubmit}>
+          <div className="submitcontainer">
+          <h4 id="submit-text"> Submit</h4>
+          </div>
+        </div>
+
+        <div className="login-route">
+          <h4 id="login-route-text">Not a member?  <a href="./">Signup</a> </h4>
+        </div>
+
       </div>
-      <div className="submitdiv" onClick={handleSubmit}>
-        <button id ="submitbutton">Submit</button>
       </div>
     </div>
     );

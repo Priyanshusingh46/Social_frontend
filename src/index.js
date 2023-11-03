@@ -7,6 +7,7 @@ import OtpVerification from '../src/Components/OptVerification';
 import Login from './Components/Login';
 import Home from "./Components/Home";
 
+
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <BrowserRouter>
