@@ -1,0 +1,55 @@
+.Firstdiv{
+    width:55%
+}
+#submitbutton{
+    font-size: 18px;
+}
+.inputbox{
+    width: 48%;
+    height: 4vh;
+    font-size: 18px;
+    padding: 10px;
+    margin-top: 18px;
+}
+
+.outerdivotp{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    width: 100%;
+    background-image: url("../../Images/background.jpg");
+    background-repeat: no-repeat;
+    height: 100vh;
+    background-size: 100% 100%;
+}
+
+#otptext{
+    margin-bottom: 10px;
+    font-weight: 500;
+    font-style: italic;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.submitdiv1{
+    width: 48%;
+    display: flex;
+    justify-content: center;
+}
+.submitcontainer1{
+    width: 25%;
+    background-color: #002ead;
+    height: 5vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 5%;
+    border-radius: 10px;
+}
+.submitcontainer1:hover{
+    cursor: pointer;
+}
+#submit-text1{
+color: white;
+font-size: 22px;
+font-weight: 500;
+}

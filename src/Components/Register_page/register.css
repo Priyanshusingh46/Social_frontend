@@ -1,0 +1,109 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+.forminput{
+    display: flex;
+    flex-direction: column;
+    place-items: center;
+}
+
+.inputbox{
+    width: 48%;
+    height: 4vh;
+    font-size: 18px;
+    padding: 16px;
+    border-radius: 10px;
+    font-style: italic;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.submitdiv{
+    display: flex;
+    justify-content: center;
+}
+#submitbutton{
+    font-size: 18px;
+}
+
+#heading_text{
+    text-align: center;
+    margin-bottom: 38px;
+    font-style: italic;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+.Register-main-cointainer{
+    background-image: url("../../Images/background.jpg");
+    background-repeat: no-repeat;
+    height: 100vh;
+    background-size: 100% 100%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.Formdiv{
+    width: 60%;
+    /*background-color: #CDF5FD;*/
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.inputContainer{
+    width: 100%;
+}
+
+.submitcontainer{
+background-color: #002ead;
+    width: 18%;
+    height: 5vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+}
+.submitcontainer:hover{
+    cursor: pointer;
+}
+#submit-text{
+    color: white;
+    font-size: 20px;
+    font-weight: 400;
+    font-style: italic;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+.login-route{
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 18px;
+}
+
+#login-route-text{
+    margin-right: 22%;
+    font-size: 20px;
+    font-weight: 600;
+}
+a{
+    color: #002ead;
+    text-decoration: none;
+}
+
+/* Login page ka extra */
+.forgetpassworddiv{
+    width: 48%;
+    display: flex;
+    justify-content: flex-start;
+}
+#forgetpasswordtext{
+    font-size: 20px;
+    font-style: italic;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: #002ead;
+}
+
+.forgetpassworddiv :hover{
+    cursor: pointer;
+}
