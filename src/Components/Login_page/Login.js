@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import axios from "axios";
 import "../Register_page/register.css"; 
 import { useNavigate } from "react-router-dom";
-
+import Cookies from 'js-cookie';
 
 function Login() {
     const [roll, setRoll] = useState(0);
@@ -11,16 +11,23 @@ function Login() {
     function handleSubmit  (){
         console.log(password);
         try {
-          axios.post("http://localhost:3001/login",{
-            roll:roll,
-            password:password
-          }).then((response)=>{
+          axios.post("http://localhost:3001/login", {
+            roll: roll,
+            password: password,
+          }).then((response) => {
+            console.log("login response",response.data);
+            Cookies.set('token',response.data);
             navigate("/home");
-            console.log(response.data);
-          })
-        } 
-        catch (error) {
-          console.log(error);
+            
+          }).catch((error) => {
+            if (error.response.status === 404) {
+              alert("User not found. Please check your credentials.");
+            } else {
+              console.log("Error:", error);
+            }
+          });
+        } catch (error) {
+          console.log("Exception occurred:", error);
         }
     }
 
