@@ -2,7 +2,6 @@ import React, { useEffect, useState } from "react";
 import { Navigate } from "react-router-dom";
 import Cookies from "js-cookie";
 import axios from "axios";
-import Login from "../Login_page/Login";
 
 function PrivateComponent({ Component }) {
   const [isAuth, setIsAuth] = useState(false);
@@ -12,12 +11,10 @@ function PrivateComponent({ Component }) {
     const x = Cookies.get("token");
     if (x) {
       try {
-        const response = await axios.get(
+        const response = await axios.post(
           "http://localhost:3001/tokenverification",
           {
-            headers: {
-              Authorization: `Bearer ${x}`,
-            },
+            token:x,
           }
         );
 
